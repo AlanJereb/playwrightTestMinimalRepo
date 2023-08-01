@@ -3,7 +3,7 @@ import { defineConfig, devices } from "@playwright/test";
 export default defineConfig({
   workers: "70%",
   retries: 0,
-  testDir: "../..",
+  testDir: "./src/",
   testMatch: [
     "**/__e2e-tests__/**/*.[jt]s?(x)",
     "**/?(*.)+(e2etest).[jt]s?(x)",
@@ -37,11 +37,3 @@ export default defineConfig({
     },
   ],
 });
-
-export const testSettings = {
-  customConfig: {
-    customSnapshotsDir: "./src/e2e_tests/snapshots",
-    diffDirName: "__diff_output__",
-    failedOutputDirName: "__failed_output__",
-  },
-};

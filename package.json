@@ -25,7 +25,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "e2e": "npx playwright test --config playwright.config.ts --retries=10"
+    "e2e": "npx playwright test --config playwright.config.ts --retries=10",
+    "e2e-debug": "npx playwright test --config playwright.config.ts --debug"
+  },
+  "resolutions": {
+    "@types/react": "17.0.2",
+    "@types/react-dom": "17.0.2"
   },
   "browserslist": [
     ">0.2%",
